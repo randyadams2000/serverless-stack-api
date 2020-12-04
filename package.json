@@ -1,5 +1,5 @@
 {
-  "name": "notes-app-api",
+  "name": "immortify-api",
   "version": "1.1.0",
   "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.679.0",
-    "serverless-bundle": "^1.2.5",
+    "serverless-bundle": "^1.9.1",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.3.3"
   },
