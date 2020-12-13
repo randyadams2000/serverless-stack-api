@@ -61,17 +61,6 @@ functions:
           method: get
           cors: true
           authorizer: aws_iam
-  getList:
-    # Defines an HTTP API endpoint that calls the main function in getList.js
-    # - path: url path is /notes/{id}
-    # - method: GET request
-    handler: getList.main
-    events:
-      - http:
-          path: notes
-          method: getList
-          cors: true
-          authorizer: aws_iam
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
     # - path: url path is /notes
