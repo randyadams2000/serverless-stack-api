@@ -61,6 +61,28 @@ functions:
           method: get
           cors: true
           authorizer: aws_iam
+  getPrompt:
+    # Defines an HTTP API endpoint that calls the main function in get.js
+    # - path: url path is /notes/{id}
+    # - method: GET request
+    handler: getPrompt.main
+    events:
+      - http:
+          path: notes/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+  getPromptCategory:
+    # Defines an HTTP API endpoint that calls the main function in get.js
+    # - path: url path is /notes/{id}
+    # - method: GET request
+    handler: getPromptCategory.main
+    events:
+      - http:
+          path: notes/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
     # - path: url path is /notes
