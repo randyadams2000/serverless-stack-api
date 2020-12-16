@@ -74,12 +74,12 @@ functions:
           authorizer: aws_iam
   getPromptCategory:
     # Defines an HTTP API endpoint that calls the main function in get.js
-    # - path: url path is /notes/{id}
+    # - path: url path is /notes
     # - method: GET request
     handler: getPromptCategory.main
     events:
       - http:
-          path: notes/{id}
+          path: notes
           method: get
           cors: true
           authorizer: aws_iam
