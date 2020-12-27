@@ -68,7 +68,7 @@ functions:
     handler: getPrompt.main
     events:
       - http:
-          path: notes/{id}
+          path: prompts/{id}
           method: get
           cors: true
           authorizer: aws_iam
@@ -79,7 +79,7 @@ functions:
     handler: getPromptCategory.main
     events:
       - http:
-          path: notes
+          path: prompts
           method: get
           cors: true
           authorizer: aws_iam

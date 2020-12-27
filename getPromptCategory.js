@@ -12,7 +12,7 @@ export const main = handler(async (event, context) => {
     //   of the authenticated user
     KeyConditionExpression: "category = :category",
     ExpressionAttributeValues: {
-      ":category": event.pathParameters.category
+      ":category": "legacy"
     }
   };
 
