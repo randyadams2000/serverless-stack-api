@@ -61,14 +61,14 @@ functions:
           method: get
           cors: true
           authorizer: aws_iam
-  getVideo:
+  video:
     # Defines an HTTP API endpoint that calls the main function in get.js
     # - path: url path is /notes/{id}
     # - method: GET request
-    handler: getVideo.main
+    handler: video.main
     events:
       - http:
-          path: videos/{id}
+          path: video/{id}
           method: get
           cors: true
           authorizer: aws_iam
