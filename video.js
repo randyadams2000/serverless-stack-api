@@ -12,9 +12,10 @@ export const main = handler(async (event, context) => {
       }
   };
   const result = await dynamoDb.query(params);
-  console.log(result.Items[0].attachment);
+  console.log("Result from video=" + result.Items[0].attachment);
   if ( ! result.Items[0]) {
-    throw new Error("Item not found.");
+    return undefined;
+//    throw new Error("Item not found.");
   }
 
   // Return the retrieved item
